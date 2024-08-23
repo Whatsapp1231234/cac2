@@ -18,16 +18,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/Whatsapp1231234/cac2",
+  "homepage": "https://github.com",
   "author": {
     "name": "Whatsapp1231234"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Whatsapp1231234/cac2.git"
+    "url": "git+https://github.com.git"
   },
   "bugs": {
-    "url": "https://github.com/Whatsapp1231234/cac2/issues"
+    "url": "https://github.comissues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
