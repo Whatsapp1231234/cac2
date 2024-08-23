@@ -11,16 +11,34 @@ const handler = async (m, {usedPrefix}) => {
   else who = m.sender;
   const name = conn.getName(who);
   m.reply(`
-${tradutor.texto1[0]}
-${tradutor.texto1[1]} ${name}
-${tradutor.texto1[2]} ${global.db.data.users[who].limit}💎
-${tradutor.texto1[3]}
-${tradutor.texto1[4]} 
-${tradutor.texto1[5]}
-❏ *${usedPrefix}buy ${tradutor.texto1[6]}
-❏ *${usedPrefix}buyall*`);
+Здравствуйте. Имеется бот:
+ _*Хулиган*_бот-админ
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+*Присутствуют маты*.
+°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+ _*Хулиган*_ вызывает всю группу через @ , удаляет за ссылки, сносит арабов и индусов,  закрывает и открывает группу по команде. 
+╔════════
+╠══ *ЦЕНА БОТА*
+╠  Хулиган - 500₽  месяц 
+╚════════
+Ответственность за работу бота я не несу. Так как бот это программа и бывает виснет, на сервере перегруз, перебой. Так же ватсап блокирует номера и бот не исключение. В случае блокировки бота, деньги не возвращаю, другого не предоставляю, так как это не моя вина.
+Если вас все устраивает, скидывайте ссылку на группу.
+╔════════
+╠══ *Оплата*
+╠   https://www.sberbank.com/sms/pbpn?requisiteNumber=79384030507
+╠ 
+╠ 
+╠ 
+╠══ *Свяжитесь с создателем*
+╠ #создатель
+╠ 
+╚════════
+
+
+`);
 };
-handler.help = ['bal'];
-handler.tags = ['xp'];
-handler.command = ['bal', 'diamantes', 'diamond', 'balance'];
+handler.customPrefix = /з|@/i;
+handler.tags = ['anonymous'];
+handler.command = ['аказать'];
+handler.private = true;
 export default handler;

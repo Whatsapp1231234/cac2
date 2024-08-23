@@ -23,10 +23,10 @@ ${listAdmin}
 ${tradutor.texto1[2]}`.trim();
   conn.sendFile(m.chat, pp, 'error.jpg', text, m, false, {mentions: [...groupAdmins.map((v) => v.id), owner]});
 };
-handler.help = ['admins <texto>'];
+handler.help = ['админ <texto>'];
 handler.tags = ['group'];
-// regex detect A word without case sensitive
-handler.customPrefix = /a|@/i;
-handler.command = /^(admins|@admins|dmins)$/i;
+// регулярное выражение определяет слово без учета регистра
+handler.customPrefix = /а|@/i;
+handler.command = /^(дмин)$/i;
 handler.group = true;
 export default handler;

@@ -1,4 +1,4 @@
-import * as baileys from "baileys";
+import * as baileys from '@whiskeysockets/baileys';
 
 
 const handler = async (m, {conn, text}) => {

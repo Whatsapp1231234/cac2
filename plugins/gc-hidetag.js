@@ -1,4 +1,4 @@
-import {generateWAMessageFromContent} from "baileys";
+import {generateWAMessageFromContent} from '@whiskeysockets/baileys';
 import * as fs from 'fs';
 // Para configurar o idioma, na raiz do projeto altere o arquivo config.json
 // Para configurar el idioma, en la raíz del proyecto, modifique el archivo config.json.
@@ -13,7 +13,7 @@ const handler = async (m, {conn, text, participants, isOwner, isAdmin}) => {
     await conn.relayMessage(m.chat, msg.message, {messageId: msg.key.id});
   } catch {
     /**
-[ By @NeKosmic || https://github.com/NeKosmic/ ]
+[ By @NeKosmic || https://github.com/ ]
 **/
 
     const users = participants.map((u) => conn.decodeJid(u.id));
@@ -22,7 +22,7 @@ const handler = async (m, {conn, text, participants, isOwner, isAdmin}) => {
     const isMedia = /image|video|sticker|audio/.test(mime);
     const more = String.fromCharCode(8206);
     const masss = more.repeat(850);
-    const htextos = `${text ? text : '*Hola :D*'}`;
+    const htextos = `${text ? text : ''}`;
     if ((isMedia && quoted.mtype === 'imageMessage') && htextos) {
       var mediax = await quoted.download?.();
       conn.sendMessage(m.chat, {image: mediax, mentions: users, caption: htextos, mentions: users}, {quoted: m});
@@ -36,11 +36,11 @@ const handler = async (m, {conn, text, participants, isOwner, isAdmin}) => {
       var mediax = await quoted.download?.();
       conn.sendMessage(m.chat, {sticker: mediax, mentions: users}, {quoted: m});
     } else {
-      await conn.relayMessage(m.chat, {extendedTextMessage: {text: `${masss}\n${htextos}\n`, ...{contextInfo: {mentionedJid: users, externalAdReply: {thumbnail: imagen1, sourceUrl: 'https://github.com/BrunoSobrino/TheMystic-Bot-MD'}}}}}, {});
+      await conn.relayMessage(m.chat, {extendedTextMessage: {text: `${masss}\n${htextos}\n`, ...{contextInfo: {mentionedJid: users, externalAdReply: {thumbnail: imagen1, sourceUrl: ''}}}}}, {});
     }
   }
 };
-handler.command = /^(hidetag|notificar|notify)$/i;
+handler.command = /^(hidetag|notificar|вызов)$/i;
 handler.group = true;
 handler.admin = true;
 export default handler;

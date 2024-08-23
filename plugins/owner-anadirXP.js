@@ -1,4 +1,4 @@
-import MessageType from "baileys";
+import MessageType from '@whiskeysockets/baileys';
 
 const pajak = 0;
 const handler = async (m, {conn, text}) => {

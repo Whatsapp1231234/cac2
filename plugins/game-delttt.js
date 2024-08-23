@@ -1,4 +1,4 @@
-import MessageType from "baileys";
+import MessageType from '@whiskeysockets/baileys';
 
 const handler = async (m, {conn, usedPrefix, command}) => {
   const datas = global

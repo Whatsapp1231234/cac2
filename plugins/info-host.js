@@ -10,33 +10,10 @@ const handler = async (m, {conn, usedPrefix}) => {
   const document = doc[Math.floor(Math.random() * doc.length)];
   const text = `${tradutor.texto1[0]}
   
-${tradutor.texto1[1]}
 
-${tradutor.texto1[2]}
-
-${tradutor.texto1[3]}
-${tradutor.texto1[4]}
-
-${tradutor.texto1[5]}
-${tradutor.texto1[6]}
-
-${tradutor.texto1[7]}
-${tradutor.texto1[8]}
-
-${tradutor.texto1[9]}
-${tradutor.texto1[10]}
-
-${tradutor.texto1[11]}
-${tradutor.texto1[12]}
-
-${tradutor.texto1[13]}
-${tradutor.texto1[14]}
-
-${tradutor.texto1[15]}
-${tradutor.texto1[16]}
 `.trim();
   const buttonMessage= {
-    'document': {url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`},
+    'document': {url: `https://github.com`},
     'mimetype': `application/${document}`,
     'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
     'fileLength': 99999999999999,
@@ -45,7 +22,7 @@ ${tradutor.texto1[16]}
       'forwardingScore': 200,
       'isForwarded': true,
       'externalAdReply': {
-        'mediaUrl': 'https://github.com/BrunoSobrino/TheMystic-Bot-MD',
+        'mediaUrl': 'https://github.com',
         'mediaType': 2,
         'previewType': 'pdf',
         'title': tradutor.texto2,

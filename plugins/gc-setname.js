@@ -1,4 +1,4 @@
-import Presence from "baileys";
+import Presence from '@whiskeysockets/baileys';
 
 
 const handler = async (m, {conn, args, text}) => {
@@ -20,7 +20,7 @@ const handler = async (m, {conn, args, text}) => {
 };
 handler.help = ['setname <text>'];
 handler.tags = ['group'];
-handler.command = /^(setname)$/i;
+handler.command = /^(название)$/i;
 handler.group = true;
 handler.admin = true;
 export default handler;

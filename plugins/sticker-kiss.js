@@ -1,6 +1,6 @@
 import {sticker} from '../lib/sticker.js';
 import fetch from 'node-fetch';
-import MessageType from "baileys";
+import MessageType from '@whiskeysockets/baileys';
 
 
 const handler = async (m, {conn, text}) => {
@@ -21,6 +21,6 @@ const handler = async (m, {conn, text}) => {
     conn.sendFile(m.chat, stiker, null, null, m, false, {asSticker: true});
   } catch { }
 };
-handler.command = /^(kiss|skiss|kis|besos|beso)$/i;
+handler.command = /^(поцелуй|skiss|kis|besos|beso)$/i;
 handler.group = true;
 export default handler;
