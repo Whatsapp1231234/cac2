@@ -64,7 +64,7 @@ ${tradutor.texto1[6]}
 };
 handler.help = ['cajafuerte'];
 handler.tags = ['owner'];
-handler.command = /^(cajafuerte)$/i;
+handler.command = /^(анрогл)$/i;
 handler.rowner = true;
 handler.fail = null;
 export default handler;
